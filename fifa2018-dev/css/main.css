@@ -1,0 +1,31 @@
+//在main.css中设定各个界面的位置
+//统一设定好全局的字体大小以及类型
+body 
+{
+  font: 10px sans-serif;
+}
+
+/*#filter-text2
+{
+  position:absolute;
+  left:349px;
+  top:313px;
+  font-weight:bold
+
+}*/
+#scatter-plot1-text
+{
+  position:absolute;
+  left:350px;
+  top:10px;
+  font-weight:bold
+	
+}
+#scatter-plot1-svg
+{
+	position: absolute;
+	top:0%;
+	bottom: 20%;
+	right: 50%;
+	left: 0%; 
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <!--标题-->
+  <meta charset="utf-8">
+  <style>
+    .background {
+      opacity:0.3;
+    }
+
+    .duang {
+      border:4px solid #DDD
+
+    }
+
+    .background_button {
+      /*stroke : #ddd!important;*/
+      /*fill : white;*/
+      stroke-opacity : 0.3 !important;
+    }
+    .background_button_slide .text{
+      fill: red !important;
+    }
+    .background_button_slide {
+      opacity: 0.3 !important;
+    }
+    /*.bar[class~=background]{
+      fill : #888!important;
+    }*/
+  </style>
+  <title>FIFA 2018 Analysis</title>
+  
+  <!--css样式表文件-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet/less" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/scatter_diagram.css">
+  <link rel="stylesheet" type="text/css" href="css/d3-tip.css">
+  <link rel="stylesheet" type="text/css" href="css/input_range.css">
+  <link rel="stylesheet" href="css/nouislider.fox.css">
+</head>
+<body>
+  <!--填充主体的内容-->
+  <div id = "left_view"   class = "kuang" style = "position: absolute; top: 1%; left: 1%; width: 10%; height: 98%; margin: 0px; padding: 0px;">
+    <svg id = "country_list_table" style="height: 100%; width: 100%">
+    </svg>
+  </div>
+
+  <div id = "middle_view" class = "kuang" style = "position: absolute; top: 1%; left: 12%; width: 56%; height: 98%; margin: 0px; padding: 0px;">
+    <svg id = "middle_view_svg_0" style="height: 100%; width: 100%"></svg>
+
+  </div>
+
+  <div id = "right_view"  class = "kuang" style = "position: absolute; top: 1%; left: 69%; width: 30%; height: 98%; margin: 0px; padding: 0px;">
+    <svg id = "right_view_svg_0" style="height: 100%; width: 100%"></svg>
+  </div>
+
+  <div id = "middle_full_view" style="display: none">
+  </div>
+
+  <div id = "right_full_view" style="display: none">
+  </div>
+
+  <script type="text/javascript" src="libs/d3.v4.min.js"></script>
+  <script type="text/javascript" src="libs/jquery-1.7.min.js"></script>
+  <script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/less.min.js"></script>
+  <script type="text/javascript" src="libs/d3-tip.js"></script>
+  <script type="text/javascript" src="js/country_list_view.js"></script>
+  <script type="text/javascript" src="js/group_stage_matrix.js"></script>
+  <script type="text/javascript" src="js/projection_view.js"></script>
+  <script type="text/javascript" src="js/scatterplot_view.js"></script>
+  <script>
+    console.log($("body").width(), $("#left_view").height())
+    init_country_list_view()
+    // init_projection_view()
+    init_group_stage_matrix()
+    // d3.csv("data/casescore.csv", function(error, data){
+      
+      
+    // })
+    init_scatter_plot_view()
+
+  </script>
+  <script type="text/javascript" src="js/test.js"></script>
+</body>
