@@ -1,3 +1,3 @@
 # PKU-Summer-school-2018 
 ## Project--课程设计
-### 世界杯案例
+### 足球世界杯data demo
